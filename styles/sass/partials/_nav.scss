@@ -1,0 +1,42 @@
+@use "./variables";
+
+// Nav Styles
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(variables.$primary, 0.08);
+    background-color: variables.$solidWhite;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .cartFlex {
+            display: flex;
+            align-items: center;
+            // gap: 20px;
+                p {
+                    margin-bottom: 0;
+                    width: 24px;
+                    height: 24px;
+                    background-color: variables.$primary;
+                    color: variables.$solidWhite;
+                    text-align: center;
+                    border-radius: 50%;
+                    line-height: 1.1;
+                }
+                .menuIcon,
+                .bag {
+                    margin-right: 15px;
+                }
+        }
+}
+
+// Slide Out Nav
+.slideOutNav {
+    display: none;
+}
+
