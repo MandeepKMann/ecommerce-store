@@ -1,0 +1,21 @@
+@use "./variables";
+
+header {
+    background: variables.$tertiary;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+        .headerImgContainer {
+            width: 45%;
+        }
+        .headerContentContainer {
+            width: 65%;
+            margin: 0 auto;
+        }
+}
+
+.headerWrapper {
+    width: 55%;
+    color: variables.$primary;
+}
